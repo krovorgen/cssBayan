@@ -1,4 +1,81 @@
-.title {
-    text-align: center;
-    color: #000;
+body {
+    background-color: #ccc;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    line-height: 1.2;
+    font-size: 24px;
+}
+.accordion {
+    margin: 16px;
+}
+
+.accordion__title {
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+
+.accordion__items {
+    min-width: 800px;
+    max-width: 800px;
+    width: 100%;
+}
+
+.accordion__item {
+    border-radius: 6px;
+    padding: 8px;
+    background-color: #fff;
+}
+
+.accordion__item:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.accordion__label {
+    cursor: pointer;
+}
+
+.accordion__radio {
+    position: absolute;
+    margin: -1px;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+
+.accordion__radio:checked ~ .accordion__content {
+    display: flex;
+}
+
+.accordion__radio:checked ~ .accordion__head .accordion__arrow {
+    transform: rotate(180deg);
+}
+
+.accordion__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.accordion__subtitle {
+    color: #181818;
+}
+
+.accordion__arrow {
+    transition: transform 0.3s ease-in-out;
+}
+
+.accordion__content {
+    margin-top: 16px;
+    display: none;
+    justify-content: center;
+}
+
+.accordion__meme {
+    width: 300px;
 }
