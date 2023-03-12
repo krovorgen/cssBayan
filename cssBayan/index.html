@@ -1,12 +1,77 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./index.css">
     <title>cssBayan</title>
 </head>
+
 <body>
-    <h1 class="title">cssBayan</h1>
+    <section class="accordion">
+        <h1 class="accordion__title">cssBayan</h1>
+        <ul class="accordion__items">
+            <li class="accordion__item">
+                <label class="accordion__label">
+                    <input type="radio" class="accordion__radio" name="accordion-radio">
+                    <div class="accordion__head">
+                        <h3 class="accordion__subtitle">
+                            Мемчик 1
+                        </h3>
+                        <img class="accordion__arrow" src="./assets/arrow.svg" width="24" height="24" alt="Стрелочка">
+                    </div>
+                    <div class="accordion__content">
+                        <img class="accordion__meme" src="./assets/meme1.jpg" alt="Мем">
+                    </div>
+                </label>
+            </li>
+            <li class="accordion__item">
+                <label class="accordion__label">
+                    <input type="radio" class="accordion__radio" name="accordion-radio">
+                    <div class="accordion__head">
+                        <h3 class="accordion__subtitle">
+                            Мемчик 2
+                        </h3>
+                        <img class="accordion__arrow" src="./assets/arrow.svg" width="24" height="24" alt="Стрелочка">
+                    </div>
+                    <div class="accordion__content">
+                        <img class="accordion__meme" src="./assets/meme2.jpg" alt="Мем">
+                    </div>
+                </label>
+            </li>
+            <li class="accordion__item">
+                <label class="accordion__label">
+                    <input type="radio" class="accordion__radio" name="accordion-radio">
+                    <div class="accordion__head">
+                        <h3 class="accordion__subtitle">
+                            Мемчик 3
+                        </h3>
+                        <img class="accordion__arrow" src="./assets/arrow.svg" width="24" height="24" alt="Стрелочка">
+                    </div>
+                    <div class="accordion__content">
+                        <img class="accordion__meme" src="./assets/meme3.jpg" alt="Мем">
+                    </div>
+                </label>
+            </li>
+            <li class="accordion__item">
+                <label class="accordion__label">
+                    <input type="radio" class="accordion__radio" name="accordion-radio">
+                    <div class="accordion__head">
+                        <h3 class="accordion__subtitle">
+                            Мемчик 4
+                        </h3>
+                        <img class="accordion__arrow" src="./assets/arrow.svg" width="24" height="24" alt="Стрелочка">
+                    </div>
+                    <div class="accordion__content">
+                        <img class="accordion__meme" src="./assets/meme4.jpg" alt="Мем">
+                    </div>
+                </label>
+            </li>
+        </ul>
+    </section>
 </body>
+
 </html>
